@@ -3,9 +3,66 @@
     <head>
         <meta charset="UTF-8">
         <title>SAKU-SEED official site</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+            
+            
+       
+            
+            
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script type="text/javascript">
+            $(function(){
+                var setImg = '.photo';
+                var fadeSpeed = 1600;
+                var switchDelay = 5000;
+            
+                $(setImg).children('img').css({opacity:'0'});
+                $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+            
+                setInterval(function(){
+                    $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+                },switchDelay);
+            });
+            </script>
+            
+
     </head>
-    <body>
-        月咲SEED開設中
+    
+    <body class="center">
+
+        <div class="bg">
+            <div class="flexbox1">
+            <div class="head">
+                <span class="SubName">田川創作炭坑節宗家</span><br>
+                <span class="MainName"> 月咲SEED </span><span class="Official">Official Site</span>
+            </div>
+            <div class="page">
+                    <ul class = "foo">
+                            <li><a href="https://fjyusk56.github.io/">ホーム</a></li>
+                            <li><a href="https://fjyusk56.github.io/IT_Tech.html">プロフィール</a></li>
+                            <li><a href="https://www.gamedesign.jp/flash/mahjong/mahjong.html">活動</a></li>
+                            <li><a href="https://www.amazon.co.jp/?ref_=nav_signin&">お問い合わせ</a></li>
+                    </ul>
+            </div>
+            </div></div>
+
+
+
+
+
+        </div>
+
+        <div class="photo">
+            <img src="a008.jpg" width="1000" height="600" alt="">
+            <img src="b007.jpg" width="1000" height="600" alt="">
+            <img src="b002.jpg" width="1000" height="600" alt="">
+            <img src="b008.jpg" width="1000" height="600" alt="">
+            <img src="a003.jpg" width="1000" height="600" alt="">
+        </div>
+        
+        
     </body>
 
 

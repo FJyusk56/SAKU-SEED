@@ -1,0 +1,96 @@
+.photo {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo img {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.center{
+    text-align: center;
+    margin: 0;
+    background-color: black;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.head {
+    /*background-color: aqua;*/
+    padding: 20px 100px 0px 200px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.page {
+    /*background-color: orange;*/
+    padding: auto;
+    margin: auto;
+}
+
+.flexbox1 {
+    display: flex;
+    background-color: #4d4d4d;
+    height: 120px;
+}
+
+.SubName {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 190px;
+    color: black;
+    font-size: 30px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.MainName {
+    color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.Official {
+    color: black;
+    font-size: 30px;
+}
+
+ul.foo {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    text-align: center;
+  }
+  
+  ul.foo li {
+    display: inline;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  
+  ul.foo li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  a:link {color: white;}
+  a:visited {color: white;}
+  a:hover {color: yellow;}
+  a:active {color: yellow;}
+
+  a {text-decoration: none;}
+    
