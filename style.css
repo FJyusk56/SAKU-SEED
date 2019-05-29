@@ -59,7 +59,7 @@ ul.foo li {
     display: inline;
     /* margin-left: 5px;
     padding-left: 15px; */
-    font-size: 25px;
+    font-size: 22px;
     font-family: serif;
 }
   
@@ -101,7 +101,7 @@ ul.foo li:first-child {
       padding: 100px 0px 80px 0px;
   }
 
-  .explain {
+  /* .explain {
       position: relative;
       
   }
@@ -123,6 +123,16 @@ ul.foo li:first-child {
   .explain img{
       opacity: 0.5;
 
+  } */
+
+  .explain {
+        background-image: url(b002.jpg);
+        height: 800px;
+        text-align: center;
+        color: #FAFFC9;
+        font-family: serif;
+        font-size: 30px;
+      
   }
 
 .header03 {
