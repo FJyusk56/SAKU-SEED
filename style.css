@@ -1,6 +1,6 @@
 .photo {
-    width: 1200px;
-    height: 800px;
+    width: 1000px;
+    height: 600px;
     margin: 0 auto;
     text-align: left;
     overflow: hidden;
@@ -16,7 +16,7 @@
 .center{
     text-align: center;
     margin: 0;
-    background-color: black;
+    background-color: #020202;
 }
 
 .strheader {
@@ -83,3 +83,41 @@ ul.foo li:first-child {
   a:active {color: yellow;}
 
   a {text-decoration: none;}
+
+  .team_URL{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a1a1a;
+  }
+
+  .team_URL img:hover{
+    opacity: 0.6;
+  }
+
+  .logo {
+      margin: 150px;
+  }
+
+  .explain {
+      position: relative;
+      
+  }
+
+  .explain p{
+    position: absolute;
+    color: #FAFFC9;
+    font-family: serif;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+  }
+
+  .explain img{
+      opacity: 0.5;
+  }
