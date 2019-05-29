@@ -96,8 +96,9 @@ ul.foo li:first-child {
     opacity: 0.6;
   }
 
+
   .logo {
-      margin: 100px 0px 80px 0px;
+      padding: 100px 0px 80px 0px;
   }
 
   .explain {
@@ -121,6 +122,7 @@ ul.foo li:first-child {
 
   .explain img{
       opacity: 0.5;
+
   }
 
 .header03 {
@@ -155,7 +157,7 @@ ul.foo li:first-child {
 }
 
 .footer02 {
-    margin: 100px 300px 0px;
+    /* margin: 100px 300px 0px; */
     padding: 20px 0px 0px 0px;
     text-align: center;
     color: yellow;
@@ -169,4 +171,18 @@ ul.foo li:first-child {
     text-align: center;
     font-size: 12px;
     color: black;
+}
+
+.asanoha01 {
+    background-image: url(c007.jpg);
+  }
+
+.asanoha02 {
+    background-image: url(c006.jpg);
+}
+
+.black {
+    background-color: #020202;
+    margin: 0px 80px;
+    padding: 0px 0px 100px;
 }
