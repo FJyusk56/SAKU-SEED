@@ -1,6 +1,6 @@
 .photo {
-    width: 1000px;
-    height: 600px;
+    width: 1200px;
+    height: 800px;
     margin: 0 auto;
     text-align: left;
     overflow: hidden;
@@ -19,54 +19,34 @@
     background-color: black;
 }
 
-.bg {
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-.head {
-    /*background-color: aqua;*/
-    padding: 20px 100px 0px 200px;
-    margin: 0px 0px 0px 0px;
+.strheader {
+    padding: 0px 10px;
+    margin: 0 auto;
+    position: relative;
+    background: #4d4d4d;
 
 }
-
-.page {
-    /*background-color: orange;*/
-    padding: auto;
-    margin: auto;
-}
-
-.flexbox1 {
-    display: flex;
-    background-color: #4d4d4d;
-    height: 120px;
-}
-
-.SubName {
-    display: inline-block;
-    position: absolute;
-    top: 8px;
-    left: 190px;
-    color: black;
-    font-size: 30px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-}
-
-.MainName {
+    
+.headerinner {
+    margin: 0 auto;
+    position: relative;
     color: yellow;
-    font-size: 50px;
-    font-weight: bold;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+
 }
 
-.Official {
-    color: black;
-    font-size: 30px;
+.header01 {
+    margin: 0px;
+    /* text-align: left; */
+
 }
+
+/* .header02 {
+    text-align: right;
+} */
 
 ul.foo {
     margin: 0px 0px;
@@ -78,7 +58,8 @@ ul.foo {
     display: inline;
     margin-left: 5px;
     padding-left: 15px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: serif;
   }
   
   ul.foo li:first-child {
@@ -93,4 +74,3 @@ ul.foo {
   a:active {color: yellow;}
 
   a {text-decoration: none;}
-    
