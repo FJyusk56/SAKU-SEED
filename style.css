@@ -30,7 +30,7 @@
 .headerinner {
     margin: 0 auto;
     position: relative;
-    color: yellow;
+    color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -52,20 +52,29 @@ ul.foo {
     margin: 0px 0px;
     padding: 0px 0px;
     text-align: center;
-  }
+}
   
-  ul.foo li {
+ul.foo li {
     display: inline;
-    margin-left: 5px;
-    padding-left: 15px;
+    /* margin-left: 5px;
+    padding-left: 15px; */
     font-size: 25px;
     font-family: serif;
-  }
+}
   
-  ul.foo li:first-child {
+ul.foo li:first-child {
     margin-left: 0;
     padding-left: 0;
     border-left: 0;
+}
+
+.inline-item::before {
+    content: "/";
+    margin-left: .5em;  
+    margin-right: .5em;  
+  }
+  .inline-item:first-child::before {
+    content: none;
   }
 
   a:link {color: white;}
