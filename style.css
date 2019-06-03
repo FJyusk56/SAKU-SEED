@@ -125,13 +125,31 @@ ul.foo li:first-child {
 
   } */
 
+    .asanoha01 {
+        background-image: url(c007.jpg);
+    }
+
+    .asanoha02 {
+        background-image: url(c006.jpg);
+    }
+
+    .black {
+        background-color: #020202;
+        margin: 0px 80px;
+        padding: 0px 0px 100px;
+    }
+
   .explain {
         background-image: url(b002.jpg);
-        height: 800px;
+        background-size: cover;
+        display: inline-block;
+        width: 100%;
         text-align: center;
         color: #FAFFC9;
         font-family: serif;
         font-size: 30px;
+        /* margin: 0px 80px; */
+        
       
   }
 
@@ -183,16 +201,3 @@ ul.foo li:first-child {
     color: black;
 }
 
-.asanoha01 {
-    background-image: url(c007.jpg);
-  }
-
-.asanoha02 {
-    background-image: url(c006.jpg);
-}
-
-.black {
-    background-color: #020202;
-    margin: 0px 80px;
-    padding: 0px 0px 100px;
-}
