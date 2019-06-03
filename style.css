@@ -126,11 +126,12 @@ ul.foo li:first-child {
   } */
 
     .asanoha01 {
-        background-image: url(c007.jpg);
+        background-image: url(c009.jpg);
     }
 
     .asanoha02 {
-        background-image: url(c006.jpg);
+        background-image: url(c005.jpg);
+        /* background-size: cover; */
     }
 
     .black {
@@ -148,7 +149,6 @@ ul.foo li:first-child {
         color: #FAFFC9;
         font-family: serif;
         font-size: 30px;
-        /* margin: 0px 80px; */
         
       
   }
@@ -176,6 +176,11 @@ ul.foo li:first-child {
 .icon03 {
     color: red;
     margin: 20px;
+}
+
+.icon_btn:hover{
+    opacity: 0.6;
+    transition: 0.8s;
 }
 
 .footer01 {
