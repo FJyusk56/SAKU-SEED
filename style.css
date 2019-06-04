@@ -1,3 +1,4 @@
+/* HPスライドしょー */
 .photo {
     width: 1000px;
     height: 600px;
@@ -6,13 +7,13 @@
     overflow: hidden;
     position: relative;
 }
-
 .photo img {
     top: 0;
     left: 0;
     position: absolute;
 }
 
+/* body用class */
 .center{
     text-align: center;
     margin: 0;
@@ -20,6 +21,7 @@
     color: #FAFFC9;
 }
 
+/* header用class */
 .strheader {
     padding: 0px 10px;
     margin: 0 auto;
@@ -27,7 +29,6 @@
     background: #4d4d4d;
 
 }
-    
 .headerinner {
     margin: 0 auto;
     position: relative;
@@ -36,25 +37,17 @@
     justify-content: space-around;
     align-items: center;
     height: 150px;
-
 }
-
 .header01 {
     margin: 0px;
-    /* text-align: left; */
-
 }
 
-/* .header02 {
-    text-align: right;
-} */
-
+/* headerのメニュー用class */
 ul.foo {
     margin: 0px 0px;
     padding: 0px 0px;
     text-align: center;
 }
-  
 ul.foo li {
     display: inline;
     /* margin-left: 5px;
@@ -62,142 +55,107 @@ ul.foo li {
     font-size: 22px;
     font-family: serif;
 }
-  
 ul.foo li:first-child {
     margin-left: 0;
     padding-left: 0;
     border-left: 0;
 }
-
 .inline-item::before {
     content: "/";
     margin-left: .5em;  
     margin-right: .5em;  
-  }
-  .inline-item:first-child::before {
+}
+.inline-item:first-child::before {
     content: none;
-  }
+}
+a:link {color: white;}
+a:visited {color: white;}
+a:hover {color: yellow;}
+a:active {color: yellow;}
+a {text-decoration: none;}
 
-  a:link {color: white;}
-  a:visited {color: white;}
-  a:hover {color: yellow;}
-  a:active {color: yellow;}
 
-  a {text-decoration: none;}
-
-  .team_URL{
+/* チーム説明URL用class */
+.team_URL{
     padding: 10px 0px;
     display: flex;
     justify-content: space-around;
     background-color: #1a1a1a;
-  }
-
-  .team_URL img:hover{
+}
+.team_URL img:hover{
     opacity: 0.6;
-  }
+}
 
+/* チームマーク用class */
+.logo {
+    padding: 100px 0px 80px 0px;
+}
 
-  .logo {
-      padding: 100px 0px 80px 0px;
-  }
-
-  /* .explain {
-      position: relative;
-      
-  }
-
-  .explain p{
-    position: absolute;
+/* スライドショー背景用麻の葉 */
+.asanoha01 {
+    background-image: url(c009.jpg);
+}
+/* ホーム画面側面用麻の葉 */
+.asanoha02 {
+    background-image: url(c005.jpg);
+    /* background-size: cover; */
+}
+/* ホーム画面簡易説明背景用class */
+.black {
+    background-color: #020202;
+    margin: 0px 80px;
+    padding: 0px 0px 100px;
+}
+/* 説明文用class */
+.explain {
+    background-image: url(b002.jpg);
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
     color: #FAFFC9;
     font-family: serif;
     font-size: 30px;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    margin:0;
-    padding:0;
-  }
+}
 
-  .explain img{
-      opacity: 0.5;
-
-  } */
-
-    .asanoha01 {
-        background-image: url(c009.jpg);
-    }
-
-    .asanoha02 {
-        background-image: url(c005.jpg);
-        /* background-size: cover; */
-    }
-
-    .black {
-        background-color: #020202;
-        margin: 0px 80px;
-        padding: 0px 0px 100px;
-    }
-
-  .explain {
-        background-image: url(b002.jpg);
-        background-size: cover;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        color: #FAFFC9;
-        font-family: serif;
-        font-size: 30px;
-        
-      
-  }
-
+/* SNS用class */
 .header03 {
     margin: 10px 0px 10px 0px;
     font-size: 30px;
     color: #3E42FF;
 }
-
 .SNS_icon {
     margin: 0px 0px 30px 0px;
 }
-
 .icon01{
     color: skyblue;
     margin: 20px;
 }
-
 .icon02 {
     color: blue;
     margin: 20px;
 }
-
 .icon03 {
     color: red;
     margin: 20px;
 }
-
 .icon_btn:hover{
     opacity: 0.6;
     transition: 0.8s;
 }
 
+/* footer用class */
 .footer01 {
     position: relative;
     background: #4d4d4d;
     text-align: left;
 }
-
 .footer02 {
     /* margin: 100px 300px 0px; */
     padding: 20px 0px 0px 0px;
     text-align: center;
     color: yellow;
 }
-
-
-
 .footer03 {
     margin: 40px 300px 0px;
     padding: 0px 0px 20px 0px;
@@ -206,3 +164,83 @@ ul.foo li:first-child {
     color: black;
 }
 
+
+.detail_URL {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail_URL img:hover{
+    opacity: 0.6;
+    transition: 0.8s;
+}
+
+.M_box {
+    display: flex;
+    justify-content: center;
+    margin: 50px 100px;
+    padding: 0px 0px;
+}
+
+.M_box:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+.text {
+    text-align: left;
+    text-indent: 1em;
+    font-size: 20px;
+    margin: 0px 30px;
+}
+
+.text h3 {
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
+    margin: 25px 20px 25px 0px;
+}
+
+.pict {
+    /* width: 100%; */
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.pict img {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+}
+
+.img_font {
+    position: relative;
+}
+.img_font p {
+    position: absolute;
+    font-weight: bold;
+    font-size: 3em;
+    font-family :Quicksand, sans-serif;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+.img_font img {
+    width: 95%;
+}
+
+.color01 {
+    color: #F469FF;
+}
+
+.color02 {
+    color: #B32C17;
+}
+
+.color03 {
+    color: #836CFF;
+}
