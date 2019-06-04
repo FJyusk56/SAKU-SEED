@@ -183,10 +183,6 @@ a {text-decoration: none;}
     padding: 0px 0px;
 }
 
-.M_box:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
 .text {
     text-align: left;
     text-indent: 1em;
@@ -243,4 +239,45 @@ a {text-decoration: none;}
 
 .color03 {
     color: #836CFF;
+}
+
+.member {
+    margin: 150px 80px;
+}
+
+.member div {
+    padding: 0;
+    margin: 0px 0px 60px 0px;
+    width: 30%;
+    display: inline-block;
+}
+
+.member img {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+}
+
+.member p {
+    text-align: left;
+    margin: 0;
+}
+
+.name_text {
+    padding: 0 20px 0 0;
+    /* line-height: 1.2; */
+}
+
+.Nickname_m {
+    font-size: 25px;
+    color: yellow;
+}
+
+.Nickname_f {
+    font-size: 25px;
+    color: red;
+}
+
+.br:before {
+    content: "\A";
+    white-space: pre;
 }
