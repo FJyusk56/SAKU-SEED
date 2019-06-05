@@ -12,6 +12,7 @@
     left: 0;
     position: absolute;
 }
+/******************************/
 
 /* body用class */
 .center{
@@ -20,6 +21,7 @@
     background-color: #020202;
     color: #FAFFC9;
 }
+/******************************/
 
 /* header用class */
 .strheader {
@@ -27,7 +29,6 @@
     margin: 0 auto;
     position: relative;
     background: #4d4d4d;
-
 }
 .headerinner {
     margin: 0 auto;
@@ -74,6 +75,28 @@ a:hover {color: yellow;}
 a:active {color: yellow;}
 a {text-decoration: none;}
 
+/******************************/
+
+/* footer用class */
+.footer01 {
+    position: relative;
+    background: #4d4d4d;
+    text-align: left;
+}
+.footer02 {
+    /* margin: 100px 300px 0px; */
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    color: yellow;
+}
+.footer03 {
+    margin: 40px 300px 0px;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+/******************************/
 
 /* チーム説明URL用class */
 .team_URL{
@@ -85,12 +108,10 @@ a {text-decoration: none;}
 .team_URL img:hover{
     opacity: 0.6;
 }
-
 /* チームマーク用class */
 .logo {
     padding: 100px 0px 80px 0px;
 }
-
 /* スライドショー背景用麻の葉 */
 .asanoha01 {
     background-image: url(c009.jpg);
@@ -117,7 +138,6 @@ a {text-decoration: none;}
     font-family: serif;
     font-size: 30px;
 }
-
 /* SNS用class */
 .header03 {
     margin: 10px 0px 10px 0px;
@@ -144,71 +164,18 @@ a {text-decoration: none;}
     transition: 0.8s;
 }
 
-/* footer用class */
-.footer01 {
-    position: relative;
-    background: #4d4d4d;
-    text-align: left;
-}
-.footer02 {
-    /* margin: 100px 300px 0px; */
-    padding: 20px 0px 0px 0px;
-    text-align: center;
-    color: yellow;
-}
-.footer03 {
-    margin: 40px 300px 0px;
-    padding: 0px 0px 20px 0px;
-    text-align: center;
-    font-size: 12px;
-    color: black;
-}
+/******************************/
 
-
+/* チーム詳細ページURL用class */
 .detail_URL {
     padding: 50px 20px;
     display: flex;
     justify-content: space-around;
 }
-
 .detail_URL img:hover{
     opacity: 0.6;
     transition: 0.8s;
 }
-
-.M_box {
-    display: flex;
-    justify-content: center;
-    margin: 50px 100px;
-    padding: 0px 0px;
-}
-
-.text {
-    text-align: left;
-    text-indent: 1em;
-    font-size: 20px;
-    margin: 0px 30px;
-}
-
-.text h3 {
-    text-align: center;
-    color: yellow;
-    font-size: 50px;
-    margin: 25px 20px 25px 0px;
-}
-
-.pict {
-    /* width: 100%; */
-    margin: 0px 20px;
-    text-align: center;
-}
-
-.pict img {
-    width: 400px;
-    height: 300px;
-    display: inline-block;
-}
-
 .img_font {
     position: relative;
 }
@@ -228,56 +195,145 @@ a {text-decoration: none;}
 .img_font img {
     width: 95%;
 }
-
 .color01 {
     color: #F469FF;
 }
-
 .color02 {
     color: #B32C17;
 }
-
 .color03 {
     color: #836CFF;
 }
 
+/******************************/
+
+/* 各チーム及びメンバー紹介用class */
+.M_box {
+    display: flex;
+    justify-content: center;
+    margin: 50px 100px;
+    padding: 0px 0px;
+}
+/* 説明文 */
+.text {
+    text-align: left;
+    text-indent: 1em;
+    font-size: 20px;
+    margin: 0px 30px;
+}
+/* 小見出し */
+.text h3 {
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
+    margin: 25px 20px 25px 0px;
+}
+/* チーム画像 */
+.pict {
+    /* width: 100%; */
+    margin: 0px 20px;
+    text-align: center;
+}
+.pict img {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+}
+/* メンバー個人用 */
 .member {
     margin: 150px 80px;
 }
-
 .member div {
     padding: 0;
     margin: 0px 0px 60px 0px;
     width: 30%;
     display: inline-block;
 }
-
 .member img {
     width: 100%;
     margin: 0px 0px 30px 0px;
 }
-
 .member p {
     text-align: left;
     margin: 0;
 }
-
 .name_text {
     padding: 0 20px 0 0;
     /* line-height: 1.2; */
 }
-
 .Nickname_m {
     font-size: 25px;
     color: yellow;
 }
-
 .Nickname_f {
     font-size: 25px;
     color: red;
 }
 
-.br:before {
-    content: "\A";
-    white-space: pre;
+/******************************/
+
+.music {
+    margin: 100px 0px 30px;
 }
+
+.music_ex {
+    margin: 30px 30px 30px;
+    /* text-align: left; */
+    /* display: flex; */
+}
+
+.song_name {
+    margin: 0px 40px;
+    color: #FAFFC9;
+    font-size: 40px;
+}
+
+.n_color1 {
+    color: yellow;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    font-size: 40px;
+}
+
+.song_ex {
+    margin: 20px 0px 30px;
+    padding: 0;
+}
+
+.song_ex p{
+    font-size: 15px;
+}
+
+.song{
+    margin: 0px 50px;
+    padding: 7px 0px 2px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #4d4d4d; */
+    /* height: 100px; */
+}
+
+
+.big_img{
+    /* background-color: #FAFFC9; */
+    width: 50%;
+    color: black;
+    text-align: center;
+}
+.small_img{
+    /* background-color: gold; */
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.song img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
