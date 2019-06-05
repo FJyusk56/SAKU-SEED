@@ -336,4 +336,56 @@ a {text-decoration: none;}
 }
 
 
+.purpose {
+    margin: 0px 100px;
+    text-align: left;
+}
 
+.purpose h2{
+    color: yellow;
+    font-size: 40px;
+}
+.purpose ol {
+    list-style-type: cjk-ideographic;
+    padding: 0px 0px 0px 70px;
+}
+
+.purpose li {
+    font-size: 30px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.p_img {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+
+}
+
+.p_img img {
+    width: 90%;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+.hover1:hover {
+    transform: scale(1.8,1.8);
+    cursor: pointer;
+}
+.hover2:hover {
+    transform: scale(2.0,2.0);
+    cursor: pointer;
+}
+.hover3:hover {
+    transform: scale(1.7,1.7);
+    cursor: pointer;
+}
+.hover4:hover {
+    transform: scale(2.3,2.3);
+    cursor: pointer;
+}
+.hover5:hover {
+    transform: scale(2.3,2.3);
+    cursor: pointer;
+}
