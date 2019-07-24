@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>SAKU-SEED official site</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var setImg = '.photo';
+                var fadeSpeed = 1600;
+                var switchDelay = 5000;
+            
+                $(setImg).children('img').css({opacity:'0'});
+                $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+            
+                setInterval(function(){
+                    $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+                },switchDelay);
+            });
+        </script>
+            
+
+    </head>
+    
+    
+    <body class="center">
+
+        <header class="strheader">
+            <div class="headerinner">
+                <h1 class="header01">
+                    <img src="c002.png" width="550" height="110">
+                </h1>
+                <div>
+                    <nav class="navi01">
+                        <ul class="foo">
+                            <li class="inline-item"><a href="file:///Users/fujiwarayuusuke/Desktop/SAKU_SEED/index.html">ホーム</a></li>
+                            <li class="inline-item"><a href="file:///Users/fujiwarayuusuke/Desktop/SAKU_SEED/team_member.html">チーム詳細</a></li>
+                            <li class="inline-item"><a href="">出演・イベント</a></li>
+                            <li class="inline-item"><a href="">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="asanoha01">
+            <div class="photo">
+                <img src="a008.jpg" width="1000" height="600" alt="">
+                <img src="b007.jpg" width="1000" height="600" alt="">
+                <img src="a009.jpg" width="1000" height="600" alt="">
+                <img src="b003.jpg" width="1000" height="600" alt="">
+                <img src="a003.jpg" width="1000" height="600" alt="">
+                <img src="b008.jpg" width="1000" height="600" alt="">
+                <img src="a006.jpg" width="1000" height="600" alt="">
+            </div>
+        </div>
+
+        <div class="asanoha02">
+                <div class="black">
+
+        
+
+                <div class="logo">
+                    <img src="c001.jpg" width="250" height="280">
+                </div>
+
+                <h2 class="header03">SNS公式アカウント</h2>
+    
+                <div class="SNS_icon">
+                    <a href="https://twitter.com/SEED00791990" target="_blank" class="icon_btn">
+                        <i class="fab fa-twitter fa-4x icon01"></i>
+                    </a>
+                    <a>
+                        <i class="fab fa-facebook-square fa-4x icon02"></i>
+                    </a>
+                    <a>
+                        <i class="fab fa-youtube fa-4x icon03"></i>
+                    </a>
+                </div>
+
+                <div class="explain">
+                    <br>
+                    月咲SEEDとは...<br><br>
+                    2018年4月に炭坑節発祥の地、<br>
+                    田川で生まれたダンスパフォーマンス集団。<br>
+                    炭坑節の文化を次世代へと継承するため、<br>
+                    福岡を中心に活動中。<br><br>
+                    メンバー15名　平均年齢約30才<br><br>
+                    新たな時代「令和」において<br>
+                    現代の若者に負けない勢いと力強さで<br>
+                    元気と伝統を伝え広めていく<br><br>
+                    応援よろしくお願いします！<br><br>
+                    出演依頼　新メンバー　募集中！！<br><br>
+                </div>
+    
+            </div>
+        </div>
+    
+    
+        <footer class="footer01">
+            <div class="footer02">
+                <p>運営団体　炭鉱の文化復興！伝承！プロジェクト<br>
+                    田川さのよいミュージアム</p>
+            </div>
+        
+
+            <div class="footer03">
+                <p>※本ホームページの内容・写真・イラスト等の転載を固くお断りします。</p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
