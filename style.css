@@ -113,7 +113,7 @@ p.box {
 .home_intro {
     position: absolute;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 27px;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%,-50%);
@@ -265,70 +265,43 @@ p.box {
     display: inline-block;
 }
 
-
-
-
-
-
 /******************************/
 
-/******************************/
-
-
-/* メンバー個人用 */
-.member {
-    margin: 150px 80px;
-}
-.member div {
-    padding: 0;
-    margin: 0px 0px 60px 0px;
-    width: 30%;
-    display: inline-block;
-}
-.member img {
-    width: 100%;
-    margin: 0px 0px 30px 0px;
-}
-.member p {
-    text-align: left;
-    margin: 0;
-}
-.name_text {
-    padding: 0 20px 0 0;
-    /* line-height: 1.2; */
-}
-.Nickname_m {
-    font-size: 25px;
-    color: yellow;
-}
-.Nickname_f {
-    font-size: 25px;
-    color: red;
+.music_intro {
+    margin: 70px 0px 0px 0px;
 }
 
-/******************************/
+
+.header03 {
+    margin: 10px 0px 10px 0px;
+    font-size: 40px;
+    color: rgb(224, 181, 90);
+}
+
+.music_all {
+    display: flex;
+    justify-content: space-around;
+}
 
 .music {
-    margin: 100px 0px 30px;
+    margin: 30px 0px 30px;
 }
 
 .music_ex {
     margin: 30px 30px 30px;
-    /* text-align: left; */
-    /* display: flex; */
 }
 
 .song_name {
     margin: 0px 40px;
     color: #FAFFC9;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .n_color1 {
-    color: yellow;
+    color: rgb(218, 218, 112);
     margin: 0px 0px 0px 0px;
     padding: 0;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .song_ex {
@@ -340,15 +313,14 @@ p.box {
     font-size: 15px;
 }
 
-.song{
-    margin: 0px 50px;
-    padding: 7px 0px 2px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    /* background-color: #4d4d4d; */
-    /* height: 100px; */
+.movie {
+    width: 360px;
+    height: 195px;
 }
+
+
+
+
 
 
 .big_img{
