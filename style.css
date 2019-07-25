@@ -29,12 +29,10 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-
 }
 .header_name {
     font-size: 50px;
 }
-
 .header_subname {
     font-size: 22px;
     padding: 0px 0px 10px 10px;
@@ -154,23 +152,17 @@ p.box {
 /******************************/
 
 /*SNSアイコン用*/
-
 .SNS_icon {
     margin: 50px 0px 30px;
 }
-
 .header02 {
     margin: 10px 0px 10px 0px;
     font-size: 30px;
     color: rgb(90, 159, 224);
 }
-
-
 .icon01{
     color: #FFF;
 }
-
-
 .btn-social-square {
     display: inline-block;
     text-decoration: none;
@@ -202,27 +194,22 @@ p.box {
 .btn-social-square--youtube {
     background: #db233f;
 }
-
 /******************************/
 
-/* チーム詳細ページURL用class */
-.detail_URL {
-    padding: 50px 20px;
-    display: flex;
-    justify-content: space-around;
-}
-.detail_URL img:hover{
-    opacity: 0.6;
-    transition: 0.8s;
-}
-.img_font {
+/*チーム紹介ページ用class*/
+
+.team {
+    width: 100%;
     position: relative;
 }
-.img_font p {
+.img_font {
+    background-size: cover;
+    opacity: 0.4;
+}
+.team_intro {
     position: absolute;
     font-weight: bold;
     font-size: 3em;
-    font-family :Quicksand, sans-serif;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%,-50%);
@@ -232,19 +219,8 @@ p.box {
     padding:0;
 }
 .img_font img {
-    width: 95%;
+    width: 100%;
 }
-.color01 {
-    color: #F469FF;
-}
-.color02 {
-    color: #B32C17;
-}
-.color03 {
-    color: #836CFF;
-}
-
-/******************************/
 
 /* 各チーム及びメンバー紹介用class */
 .M_box {
@@ -278,6 +254,17 @@ p.box {
     height: 300px;
     display: inline-block;
 }
+
+
+
+
+
+
+/******************************/
+
+/******************************/
+
+
 /* メンバー個人用 */
 .member {
     margin: 150px 80px;
