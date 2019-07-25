@@ -96,26 +96,32 @@ p.box {
 /******************************/
 
 /*ホームトップ画面*/
-.home_bg {
+
+.home {
     width: 100%;
-    padding-top: calc(650 / 1280 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
-    background: url(./b003.jpg) center center / cover no-repeat;
+    position: relative;
+}
+
+.home_bg {
     background-size: cover;
     opacity: 0.4;
 }
-.intro {
+.home_bg img {
     width: 100%;
-    height: 1.5em;
-    color: rgb(233, 219, 156);
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 230%;
-
+    height: 700px;
+}
+.home_intro {
     position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 400px;
+    font-weight: bold;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    line-height: 200%;
 }
 .st_c0 {
     font-size: 40px;
@@ -128,6 +134,10 @@ p.box {
 }
 .st_c3 {
     color: #FFF;
+}
+.st_c4 {
+    font-size: 30px;
+    
 }
 .break:before { 
     content: "\A"; 
@@ -142,13 +152,13 @@ p.box {
     color: #FFF;
     background: #BA2636;
     transition: .4s;
-  } 
-  .btn-flat-bottom-border > span {
+}   
+.btn-flat-bottom-border > span {
     border-bottom: solid 2px #FFF;
-  }
-  .btn-flat-bottom-border:hover {
+}
+.btn-flat-bottom-border:hover {
     background: rgb(110, 6, 17);
-  }
+}
 /******************************/
 
 /*SNSアイコン用*/
@@ -202,9 +212,12 @@ p.box {
     width: 100%;
     position: relative;
 }
-.img_font {
+.team_bg {
     background-size: cover;
     opacity: 0.4;
+}
+.team_bg img {
+    width: 100%;
 }
 .team_intro {
     position: absolute;
@@ -218,15 +231,12 @@ p.box {
     margin:0;
     padding:0;
 }
-.img_font img {
-    width: 100%;
-}
 
 /* 各チーム及びメンバー紹介用class */
 .M_box {
     display: flex;
     justify-content: center;
-    margin: 50px 100px;
+    margin: 100px 100px;
     padding: 0px 0px;
 }
 /* 説明文 */
@@ -239,7 +249,7 @@ p.box {
 /* 小見出し */
 .text h3 {
     text-align: center;
-    color: yellow;
+    color: rgb(218, 218, 112);
     font-size: 50px;
     margin: 25px 20px 25px 0px;
 }
