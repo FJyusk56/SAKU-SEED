@@ -137,7 +137,6 @@ p.box {
 }
 .st_c4 {
     font-size: 30px;
-    
 }
 .break:before { 
     content: "\A"; 
@@ -231,7 +230,6 @@ p.box {
     margin:0;
     padding:0;
 }
-
 /* 各チーム紹介class */
 .M_box {
     display: flex;
