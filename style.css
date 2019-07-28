@@ -24,14 +24,14 @@
             /* display: flex;
             justify-content: space-around; */
             align-items: center;
-            height: 95px;
+            height: 120px;
         }
         .header01 {
             margin: 0px;
             /* display: flex;
             justify-content: space-around; */
             align-items: flex-end;
-            padding: 0px 0px 10px 0px;
+            padding: 10px 0px 10px 0px;
         }
         .header_name {
             font-size: 28px;
@@ -48,7 +48,7 @@
         }
         ul.foo li {
             display: inline;
-            font-size: 12px;
+            font-size: 18px;
         }
         ul.foo li:first-child {
             margin-left: 0;
@@ -114,7 +114,7 @@
         .home_intro {
             position: absolute;
             font-weight: bold;
-            font-size: 9px;
+            font-size: 13px;
             top: 50%;
             left: 50%;
             -ms-transform: translate(-50%,-50%);
@@ -138,7 +138,7 @@
             color: #FFF;
         }
         .st_c4 {
-            font-size: 5px;
+            font-size: 10px;
         }
         .break:before { 
             content: "\A"; 
@@ -272,7 +272,7 @@
         /*曲・出演紹介ページ用class*/
     
         .music_intro {
-            margin: 70px 0px 0px 0px;
+            margin: 40px 0px 0px 0px;
         }
         .header03 {
             margin: 10px 0px 0px 0px;
@@ -294,20 +294,20 @@
         .song_name {
             /* margin: 0px 40px; */
             color: #FAFFC9;
-            font-size: 20px;
+            font-size: 22px;
         }
         .n_color1 {
             color: rgb(218, 218, 112);
             margin: 0px 0px 0px 0px;
             padding: 0;
-            font-size: 20px;
+            font-size: 22px;
         }
         .song_ex {
             margin: 20px 0px 30px;
             padding: 0;
         }
         .song_ex p{
-            font-size: 10px;
+            font-size: 14px;
         }
         .movie {
             width: 100%;
@@ -317,7 +317,7 @@
             margin: 70px 0px 0px 0px;
         }
         .event_cn {
-            font-size: 14px;
+            font-size: 18px;
         }
         .event_all {
             display: flex;
@@ -326,7 +326,7 @@
             align-content: space-around;
         }
         .event {
-            margin: 10px 5px 30px;
+            margin: 10px 15px 30px;
         }
         .event_ex {
             margin: 30px 5px 30px;
@@ -334,20 +334,20 @@
         .event_name {
             /* margin: 0px 40px; */
             color: #FAFFC9;
-            font-size: 16px;
+            font-size: 22px;
         }
         .n_color2 {
             color: rgb(218, 218, 112);
             margin: 0px 0px 0px 0px;
             padding: 0;
-            font-size: 16px;
+            font-size: 22px;
         }
         .event_ex {
             margin: 20px 0px 30px;
             padding: 0;
         }
         .event_ex p{
-            font-size: 12px;
+            font-size: 14px;
         }
         .picture {
             width: 100%;
@@ -739,8 +739,8 @@
             font-size: 36px;
         }
         .header_subname {
-            font-size: 15px;
-            padding: 0px 0px 10px 10px;
+            font-size: 20px;
+            padding: 0px 0px 5px 10px;
         }
         /* headerのメニュー用class */
         ul.foo {
@@ -750,7 +750,7 @@
         }
         ul.foo li {
             display: inline;
-            font-size: 15px;
+            font-size: 20px;
         }
         ul.foo li:first-child {
             margin-left: 0;
@@ -859,6 +859,10 @@
         }
         .btn-flat-bottom-border:hover {
             background: rgb(110, 6, 17);
+        }
+        .break_p:before { 
+            content: "\A"; 
+            white-space: pre; 
         }
         /******************************/
     
@@ -971,7 +975,7 @@
         /*曲・出演紹介ページ用class*/
     
         .music_intro {
-            margin: 70px 0px 0px 0px;
+            margin: 40px 0px 0px 0px;
         }
         .header03 {
             margin: 10px 0px 0px 0px;
