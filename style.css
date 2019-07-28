@@ -9,354 +9,1053 @@
 
 /* 〜479px：SP縦
 ------------------------------ */
+@media screen and (min-width:10px) and (max-width:479px) {
+        /* header用class */
+        .strheader {
+            padding: 0px 10px;
+            margin: 0 auto;
+            position: relative;
+            background: #FBCA4D;
+        }
+        .headerinner {
+            margin: 0 auto;
+            position: relative;
+            color: black;
+            /* display: flex;
+            justify-content: space-around; */
+            align-items: center;
+            height: 95px;
+        }
+        .header01 {
+            margin: 0px;
+            /* display: flex;
+            justify-content: space-around; */
+            align-items: flex-end;
+            padding: 0px 0px 10px 0px;
+        }
+        .header_name {
+            font-size: 28px;
+        }
+        .header_subname {
+            font-size: 12px;
+            padding: 0px 0px 0px 0px;
+        }
+        /* headerのメニュー用class */
+        ul.foo {
+            margin: 0px 0px;
+            padding: 0px 0px;
+            text-align: center;
+        }
+        ul.foo li {
+            display: inline;
+            font-size: 12px;
+        }
+        ul.foo li:first-child {
+            margin-left: 0;
+            padding-left: 0;
+            border-left: 0;
+        }
+        .inline-item::before {
+            content: "/";
+            margin-left: .5em;  
+            margin-right: .5em;  
+        }
+        .inline-item:first-child::before {
+            content: none;
+        }
+        a:link {color: #3F312B;}
+        a:visited {color: #3F312B;}
+        a:hover {color: #1D1714;}
+        a:active {color: #1D1714;}
+        a {text-decoration: none;}
+
+        /* footer用class */
+        p.box {
+            border-bottom: 1px solid #4b4b4b;
+        }
+        .footer01 {
+            position: relative;
+            background: #1C1B18;
+            text-align: left;
+        }
+        .footer02 {
+            padding: 20px 0px 0px 0px;
+            text-align: center;
+            color: rgb(230, 230, 102);
+            font-size: 15px;
+        }
+        .footer03 {
+            margin: 40px 0px;
+            padding: 0px 0px 20px 0px;
+            text-align: center;
+            font-size: 12px;
+            color: #FFF;
+        }
+        .break_f:before { 
+            content: "\A"; 
+            white-space: pre; 
+        }
+
+        /*ホームトップ画面*/
+        
+        .home {
+            width: 100%;
+            position: relative;
+        }
+        
+        .home_bg {
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .home_bg img {
+            width: 100%;
+            height: 400px;
+        }
+        .home_intro {
+            position: absolute;
+            font-weight: bold;
+            font-size: 9px;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+            line-height: 200%;
+        }
+        .st_c0 {
+            font-size: 15px;
+            color: rgb(232, 241, 92);
+        }
+        .st_c1 {
+            color: rgb(251, 118, 77);
+        }
+        .st_c2 {
+            color: #FBCA4D;
+        }
+        .st_c3 {
+            color: #FFF;
+        }
+        .st_c4 {
+            font-size: 5px;
+        }
+        .break:before { 
+            content: "\A"; 
+            white-space: pre; 
+        }
+        .btn-flat-bottom-border {
+            position: relative;
+            display: inline-block;
+            font-weight: bold;
+            padding: 7px 10px 10px 10px;
+            text-decoration: none;
+            color: #FFF;
+            background: #BA2636;
+            transition: .4s;
+        }   
+        .btn-flat-bottom-border > span {
+            border-bottom: solid 2px #FFF;
+        }
+        .btn-flat-bottom-border:hover {
+            background: rgb(110, 6, 17);
+        }
+        /******************************/
+
+        /*SNSアイコン用*/
+        .SNS_icon {
+            margin: 50px 0px 30px;
+        }
+        .header02 {
+            margin: 10px 0px 10px 0px;
+            font-size: 15px;
+            color: rgb(90, 159, 224);
+        }
+        .icon01{
+            color: #FFF;
+        }
+        .btn-social-square {
+            display: inline-block;
+            text-decoration: none;
+            width: 50px;
+            margin:2px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 23px;
+            color:white;
+            border-radius: 12px;
+            text-align: center;
+            overflow: hidden;
+            font-weight: bold;
+            transition: .3s;
+        }
+        .btn-social-square i {
+            line-height:50px;
+        }
+        .btn-social-square:hover {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        .btn-social-square--twitter {
+            background: #22b8ff;
+        }
+        .btn-social-square--facebook {
+            background: #6680d8;
+        }
+        .btn-social-square--youtube {
+            background: #db233f;
+        }
+        /******************************/
+
+        /*チーム紹介ページ用class*/
+        
+        .team {
+            width: 100%;
+            position: relative;
+        }
+        .team_bg {
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .team_bg img {
+            width: 100%;
+        }
+        .team_intro {
+            position: absolute;
+            font-weight: bold;
+            font-size: 25px;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+        }
+        /* 各チーム紹介class */
+        .M_box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            margin: 40px 10px 60px;
+            padding: 0px 0px;
+        }
+        /* 説明文 */
+        .text {
+            text-align: left;
+            text-indent: 1em;
+            font-size: 15px;
+            margin: 0px 30px;
+        }
+        /* 小見出し */
+        .text h3 {
+            text-align: center;
+            color: rgb(218, 218, 112);
+            font-size: 30px;
+            margin: 25px 20px 25px 0px;
+        }
+        /* チーム画像 */
+        .pict {
+            margin: 0px 20px;
+            text-align: center;
+        }
+        .pict img {
+            width: 100%;
+            /* height: 300px; */
+            display: inline-block;
+        }
+    
+        /******************************/
+
+    
+        /*曲・出演紹介ページ用class*/
+    
+        .music_intro {
+            margin: 70px 0px 0px 0px;
+        }
+        .header03 {
+            margin: 10px 0px 0px 0px;
+            font-size: 25px;
+            color: rgb(224, 181, 90);
+        }
+        .music_all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .music {
+            margin: 10px 5px 30px;
+        }
+        .music_ex {
+            margin: 30px 5px 30px;
+        }
+        .song_name {
+            /* margin: 0px 40px; */
+            color: #FAFFC9;
+            font-size: 20px;
+        }
+        .n_color1 {
+            color: rgb(218, 218, 112);
+            margin: 0px 0px 0px 0px;
+            padding: 0;
+            font-size: 20px;
+        }
+        .song_ex {
+            margin: 20px 0px 30px;
+            padding: 0;
+        }
+        .song_ex p{
+            font-size: 10px;
+        }
+        .movie {
+            width: 100%;
+            /* height: 195px; */
+        }
+        .event_intro {
+            margin: 70px 0px 0px 0px;
+        }
+        .event_cn {
+            font-size: 14px;
+        }
+        .event_all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .event {
+            margin: 10px 5px 30px;
+        }
+        .event_ex {
+            margin: 30px 5px 30px;
+        }
+        .event_name {
+            /* margin: 0px 40px; */
+            color: #FAFFC9;
+            font-size: 16px;
+        }
+        .n_color2 {
+            color: rgb(218, 218, 112);
+            margin: 0px 0px 0px 0px;
+            padding: 0;
+            font-size: 16px;
+        }
+        .event_ex {
+            margin: 20px 0px 30px;
+            padding: 0;
+        }
+        .event_ex p{
+            font-size: 12px;
+        }
+        .picture {
+            width: 100%;
+            height: 195px;
+            object-fit: cover;
+        }
+        .contact {
+            margin: 20px 0px 30px 0px;
+        }
+
+
+}
 
 /* 480px〜599px：SP横
 ------------------------------ */
 @media screen and (min-width:480px) and (max-width:599px) { 
-    p {color: #93c01e}/* 利用の際は消去 */
+        /* header用class */
+        .strheader {
+            padding: 0px 10px;
+            margin: 0 auto;
+            position: relative;
+            background: #FBCA4D;
+        }
+        .headerinner {
+            margin: 0 auto;
+            position: relative;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+        }
+        .header01 {
+            margin: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        .header_name {
+            font-size: 25px;
+        }
+        .header_subname {
+            font-size: 12px;
+            padding: 0px 0px 0px 10px;
+        }
+        /* headerのメニュー用class */
+        ul.foo {
+            margin: 0px 0px;
+            padding: 0px 0px;
+            text-align: center;
+        }
+        ul.foo li {
+            display: inline;
+            font-size: 12px;
+        }
+        ul.foo li:first-child {
+            margin-left: 0;
+            padding-left: 0;
+            border-left: 0;
+        }
+        .inline-item::before {
+            content: "/";
+            margin-left: .5em;  
+            margin-right: .5em;  
+        }
+        .inline-item:first-child::before {
+            content: none;
+        }
+        a:link {color: #3F312B;}
+        a:visited {color: #3F312B;}
+        a:hover {color: #1D1714;}
+        a:active {color: #1D1714;}
+        a {text-decoration: none;}
+        
+        /* footer用class */
+        
+        p.box {
+            border-bottom: 1px solid #4b4b4b;
+        }
+        
+        .footer01 {
+            position: relative;
+            background: #1C1B18;
+            text-align: left;
+        }
+        .footer02 {
+            padding: 20px 0px 0px 0px;
+            text-align: center;
+            color: rgb(230, 230, 102);
+            font-size: 15px;
+        }
+        .footer03 {
+            margin: 40px 0px;
+            padding: 0px 0px 20px 0px;
+            text-align: center;
+            font-size: 12px;
+            color: #FFF;
+        }
+        /******************************/
+        
+        /*ホームトップ画面*/
+        
+        .home {
+            width: 100%;
+            position: relative;
+        }
+        
+        .home_bg {
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .home_bg img {
+            width: 100%;
+            height: 400px;
+        }
+        .home_intro {
+            position: absolute;
+            font-weight: bold;
+            font-size: 13px;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+            line-height: 200%;
+        }
+        .st_c0 {
+            font-size: 20px;
+            color: rgb(232, 241, 92);
+        }
+        .st_c1 {
+            color: rgb(251, 118, 77);
+        }
+        .st_c2 {
+            color: #FBCA4D;
+        }
+        .st_c3 {
+            color: #FFF;
+        }
+        .st_c4 {
+            font-size: 22px;
+        }
+        .break:before { 
+            content: "\A"; 
+            white-space: pre; 
+        }
+        .btn-flat-bottom-border {
+            position: relative;
+            display: inline-block;
+            font-weight: bold;
+            padding: 7px 10px 10px 10px;
+            text-decoration: none;
+            color: #FFF;
+            background: #BA2636;
+            transition: .4s;
+        }   
+        .btn-flat-bottom-border > span {
+            border-bottom: solid 2px #FFF;
+        }
+        .btn-flat-bottom-border:hover {
+            background: rgb(110, 6, 17);
+        }
+        /******************************/
+        
+        /*SNSアイコン用*/
+        .SNS_icon {
+            margin: 50px 0px 30px;
+        }
+        .header02 {
+            margin: 10px 0px 10px 0px;
+            font-size: 20px;
+            color: rgb(90, 159, 224);
+        }
+        .icon01{
+            color: #FFF;
+        }
+        .btn-social-square {
+            display: inline-block;
+            text-decoration: none;
+            width: 50px;
+            margin:2px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 23px;
+            color:white;
+            border-radius: 12px;
+            text-align: center;
+            overflow: hidden;
+            font-weight: bold;
+            transition: .3s;
+        }
+        .btn-social-square i {
+            line-height:50px;
+        }
+        .btn-social-square:hover {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        .btn-social-square--twitter {
+            background: #22b8ff;
+        }
+        .btn-social-square--facebook {
+            background: #6680d8;
+        }
+        .btn-social-square--youtube {
+            background: #db233f;
+        }
+        /******************************/
+        
+        /*チーム紹介ページ用class*/
+        
+        .team {
+            width: 100%;
+            position: relative;
+        }
+        .team_bg {
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .team_bg img {
+            width: 100%;
+        }
+        .team_intro {
+            position: absolute;
+            font-weight: bold;
+            font-size: 30px;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+        }
+        /* 各チーム紹介class */
+        .M_box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            margin: 100px 10px;
+            padding: 0px 0px;
+        }
+        /* 説明文 */
+        .text {
+            text-align: left;
+            text-indent: 1em;
+            font-size: 20px;
+            margin: 0px 60px;
+        }
+        /* 小見出し */
+        .text h3 {
+            text-align: center;
+            color: rgb(218, 218, 112);
+            font-size: 40px;
+            margin: 25px 20px 25px 0px;
+        }
+        /* チーム画像 */
+        .pict {
+            margin: 0px 20px;
+            text-align: center;
+        }
+        .pict img {
+            width: 80%;
+            /* height: 300px; */
+            display: inline-block;
+        }
+    
+        /******************************/
+    
+        /*曲・出演紹介ページ用class*/
+    
+        .music_intro {
+            margin: 70px 0px 0px 0px;
+        }
+        .header03 {
+            margin: 10px 0px 0px 0px;
+            font-size: 30px;
+            color: rgb(224, 181, 90);
+        }
+        .music_all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .music {
+            margin: 10px 40px 30px;
+        }
+        .music_ex {
+            margin: 30px 30px 30px;
+        }
+        .song_name {
+            /* margin: 0px 40px; */
+            color: #FAFFC9;
+            font-size: 30px;
+        }
+        .n_color1 {
+            color: rgb(218, 218, 112);
+            margin: 0px 0px 0px 0px;
+            padding: 0;
+            font-size: 25px;
+        }
+        .song_ex {
+            margin: 20px 0px 30px;
+            padding: 0;
+        }
+        .song_ex p{
+            font-size: 15px;
+        }
+        .movie {
+            width: 360px;
+            height: 195px;
+        }
+        .event_intro {
+            margin: 130px 0px 0px 0px;
+        }
+        .event_cn {
+            font-size: 18px;
+        }
+        .event_all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .event {
+            margin: 10px 40px 30px;
+        }
+        .event_ex {
+            margin: 30px 30px 30px;
+        }
+        .event_name {
+            /* margin: 0px 40px; */
+            color: #FAFFC9;
+            font-size: 22px;
+        }
+        .n_color2 {
+            color: rgb(218, 218, 112);
+            margin: 0px 0px 0px 0px;
+            padding: 0;
+            font-size: 25px;
+        }
+        .event_ex {
+            margin: 20px 0px 30px;
+            padding: 0;
+        }
+        .event_ex p{
+            font-size: 15px;
+        }
+        .picture {
+            width: 360px;
+            height: 195px;
+            object-fit: cover;
+        }
+        .contact {
+            margin: 20px 0px 30px 0px;
+        }
 }
 
 /* 600px〜959px：タブレット
 ------------------------------ */
 @media screen and (min-width:600px) and (max-width:959px) {
-            /* header用class */
-            .strheader {
-                padding: 0px 10px;
-                margin: 0 auto;
-                position: relative;
-                background: #FBCA4D;
-            }
-            .headerinner {
-                margin: 0 auto;
-                position: relative;
-                color: black;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                height: 80px;
-            }
-            .header01 {
-                margin: 0px;
-                display: flex;
-                justify-content: space-around;
-                align-items: flex-end;
-            }
-            .header_name {
-                font-size: 50px;
-            }
-            .header_subname {
-                font-size: 22px;
-                padding: 0px 0px 10px 10px;
-            }
-            /* headerのメニュー用class */
-            ul.foo {
-                margin: 0px 0px;
-                padding: 0px 0px;
-                text-align: center;
-            }
-            ul.foo li {
-                display: inline;
-                font-size: 20px;
-            }
-            ul.foo li:first-child {
-                margin-left: 0;
-                padding-left: 0;
-                border-left: 0;
-            }
-            .inline-item::before {
-                content: "/";
-                margin-left: .5em;  
-                margin-right: .5em;  
-            }
-            .inline-item:first-child::before {
-                content: none;
-            }
-            a:link {color: #3F312B;}
-            a:visited {color: #3F312B;}
-            a:hover {color: #1D1714;}
-            a:active {color: #1D1714;}
-            a {text-decoration: none;}
-        
-            /* footer用class */
-        
-            p.box {
-                border-bottom: 1px solid #4b4b4b;
-            }
-        
-            .footer01 {
-                position: relative;
-                background: #1C1B18;
-                text-align: left;
-            }
-            .footer02 {
-                padding: 20px 0px 0px 0px;
-                text-align: center;
-                color: rgb(230, 230, 102);
-            }
-            .footer03 {
-                margin: 40px 301111111111111111111111111111111111111111111111111111111111111111110px 0px;
-                padding: 0px 0px 20px 0px;
-                text-align: center;
-                font-size: 12px;
-                color: #FFF;
-            }
-            /******************************/
-        
-            /*ホームトップ画面*/
-        
-            .home {
-                width: 100%;
-                position: relative;
-            }
-        
-            .home_bg {
-                background-size: cover;
-                opacity: 0.4;
-            }
-            .home_bg img {
-                width: 100%;
-                height: 700px;
-            }
-            .home_intro {
-                position: absolute;
-                font-weight: bold;
-                font-size: 27px;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%,-50%);
-                -webkit-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);
-                margin:0;
-                padding:0;
-                line-height: 200%;
-            }
-            .st_c0 {
-                font-size: 40px;
-            }
-            .st_c1 {
-                color: rgb(251, 118, 77);
-            }
-            .st_c2 {
-                color: #FBCA4D;
-            }
-            .st_c3 {
-                color: #FFF;
-            }
-            .st_c4 {
-                font-size: 30px;
-            }
-            .break:before { 
-                content: "\A"; 
-                white-space: pre; 
-            }
-            .btn-flat-bottom-border {
-                position: relative;
-                display: inline-block;
-                font-weight: bold;
-                padding: 7px 10px 10px 10px;
-                text-decoration: none;
-                color: #FFF;
-                background: #BA2636;
-                transition: .4s;
-            }   
-            .btn-flat-bottom-border > span {
-                border-bottom: solid 2px #FFF;
-            }
-            .btn-flat-bottom-border:hover {
-                background: rgb(110, 6, 17);
-            }
-            /******************************/
-        
-            /*SNSアイコン用*/
-            .SNS_icon {
-                margin: 50px 0px 30px;
-            }
-            .header02 {
-                margin: 10px 0px 10px 0px;
-                font-size: 30px;
-                color: rgb(90, 159, 224);
-            }
-            .icon01{
-                color: #FFF;
-            }
-            .btn-social-square {
-                display: inline-block;
-                text-decoration: none;
-                width: 50px;
-                margin:2px;
-                height: 50px;
-                line-height: 50px;
-                font-size: 23px;
-                color:white;
-                border-radius: 12px;
-                text-align: center;
-                overflow: hidden;
-                font-weight: bold;
-                transition: .3s;
-            }
-            .btn-social-square i {
-                line-height:50px;
-            }
-            .btn-social-square:hover {
-                -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-            }
-            .btn-social-square--twitter {
-                background: #22b8ff;
-            }
-            .btn-social-square--facebook {
-                background: #6680d8;
-            }
-            .btn-social-square--youtube {
-                background: #db233f;
-            }
-            /******************************/
-        
-            /*チーム紹介ページ用class*/
-        
-            .team {
-                width: 100%;
-                position: relative;
-            }
-            .team_bg {
-                background-size: cover;
-                opacity: 0.4;
-            }
-            .team_bg img {
-                width: 100%;
-            }
-            .team_intro {
-                position: absolute;
-                font-weight: bold;
-                font-size: 3em;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%,-50%);
-                -webkit-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);
-                margin:0;
-                padding:0;
-            }
-            /* 各チーム紹介class */
-            .M_box {
-                display: flex;
-                justify-content: center;
-                margin: 100px 100px;
-                padding: 0px 0px;
-            }
-            /* 説明文 */
-            .text {
-                text-align: left;
-                text-indent: 1em;
-                font-size: 20px;
-                margin: 0px 30px;
-            }
-            /* 小見出し */
-            .text h3 {
-                text-align: center;
-                color: rgb(218, 218, 112);
-                font-size: 50px;
-                margin: 25px 20px 25px 0px;
-            }
-            /* チーム画像 */
-            .pict {
-                margin: 0px 20px;
-                text-align: center;
-            }
-            .pict img {
-                width: 400px;
-                height: 300px;
-                display: inline-block;
-            }
-        
-            /******************************/
-        
-            /*曲・出演紹介ページ用class*/
-        
-            .music_intro {
-                margin: 70px 0px 0px 0px;
-            }
-            .header03 {
-                margin: 10px 0px 0px 0px;
-                font-size: 40px;
-                color: rgb(224, 181, 90);
-            }
-            .music_all {
-                display: flex;
-                justify-content: space-around;
-            }
-            .music {
-                margin: 10px 40px 30px;
-            }
-            .music_ex {
-                margin: 30px 30px 30px;
-            }
-            .song_name {
-                /* margin: 0px 40px; */
-                color: #FAFFC9;
-                font-size: 30px;
-            }
-            .n_color1 {
-                color: rgb(218, 218, 112);
-                margin: 0px 0px 0px 0px;
-                padding: 0;
-                font-size: 25px;
-            }
-            .song_ex {
-                margin: 20px 0px 30px;
-                padding: 0;
-            }
-            .song_ex p{
-                font-size: 15px;
-            }
-            .movie {
-                width: 360px;
-                height: 195px;
-            }
-            .event_intro {
-                margin: 130px 0px 0px 0px;
-            }
-            .event_cn {
-                font-size: 22px;
-            }
-            .event_all {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-content: space-around;
-            }
-            .event {
-                margin: 10px 40px 30px;
-            }
-            .event_ex {
-                margin: 30px 30px 30px;
-            }
-            .event_name {
-                /* margin: 0px 40px; */
-                color: #FAFFC9;
-                font-size: 22px;
-            }
-            .n_color2 {
-                color: rgb(218, 218, 112);
-                margin: 0px 0px 0px 0px;
-                padding: 0;
-                font-size: 25px;
-            }
-            .event_ex {
-                margin: 20px 0px 30px;
-                padding: 0;
-            }
-            .event_ex p{
-                font-size: 15px;
-            }
-            .picture {
-                width: 360px;
-                height: 195px;
-                object-fit: cover;
-            }
-            .contact {
-                margin: 20px 0px 30px 0px;
-            }
+    /* header用class */
+    .strheader {
+        padding: 0px 10px;
+        margin: 0 auto;
+        position: relative;
+        background: #FBCA4D;
+    }
+    .headerinner {
+        margin: 0 auto;
+            position: relative;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+        }
+        .header01 {
+            margin: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        .header_name {
+            font-size: 36px;
+        }
+        .header_subname {
+            font-size: 15px;
+            padding: 0px 0px 10px 10px;
+        }
+        /* headerのメニュー用class */
+        ul.foo {
+            margin: 0px 0px;
+            padding: 0px 0px;
+            text-align: center;
+        }
+        ul.foo li {
+            display: inline;
+            font-size: 15px;
+        }
+        ul.foo li:first-child {
+            margin-left: 0;
+            padding-left: 0;
+            border-left: 0;
+        }
+        .inline-item::before {
+            content: "/";
+            margin-left: .5em;  
+            margin-right: .5em;  
+        }
+        .inline-item:first-child::before {
+            content: none;
+        }
+        a:link {color: #3F312B;}
+        a:visited {color: #3F312B;}
+        a:hover {color: #1D1714;}
+        a:active {color: #1D1714;}
+        a {text-decoration: none;}
+    
+        /* footer用class */
+    
+        p.box {
+            border-bottom: 1px solid #4b4b4b;
+        }
+    
+        .footer01 {
+            position: relative;
+            background: #1C1B18;
+            text-align: left;
+        }
+        .footer02 {
+            padding: 20px 0px 0px 0px;
+            text-align: center;
+            color: rgb(230, 230, 102);
+        }
+        .footer03 {
+            margin: 40px 30px 0px;
+            padding: 0px 0px 20px 0px;
+            text-align: center;
+            font-size: 12px;
+            color: #FFF;
+        }
+        /******************************/
+    
+        /*ホームトップ画面*/
+    
+        .home {
+            width: 100%;
+            position: relative;
+        }
+    
+        .home_bg {
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .home_bg img {
+            width: 100%;
+            height: 600px;
+        }
+        .home_intro {
+            position: absolute;
+            font-weight: bold;
+            font-size: 18px;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+            line-height: 200%;
+        }
+        .st_c0 {
+            font-size: 25px;
+            color: rgb(232, 241, 92);
+        }
+        .st_c1 {
+            color: rgb(251, 118, 77);
+        }
+        .st_c2 {
+            color: #FBCA4D;
+        }
+        .st_c3 {
+            color: #FFF;
+        }
+        .st_c4 {
+            font-size: 22px;
+        }
+        .break:before { 
+            content: "\A"; 
+            white-space: pre; 
+        }
+        .btn-flat-bottom-border {
+            position: relative;
+            display: inline-block;
+            font-weight: bold;
+            padding: 7px 10px 10px 10px;
+            text-decoration: none;
+            color: #FFF;
+            background: #BA2636;
+            transition: .4s;
+        }   
+        .btn-flat-bottom-border > span {
+            border-bottom: solid 2px #FFF;
+        }
+        .btn-flat-bottom-border:hover {
+            background: rgb(110, 6, 17);
+        }
+        /******************************/
+    
+        /*SNSアイコン用*/
+        .SNS_icon {
+            margin: 50px 0px 30px;
+        }
+        .header02 {
+            margin: 10px 0px 10px 0px;
+            font-size: 25px;
+            color: rgb(90, 159, 224);
+        }
+        .icon01{
+            color: #FFF;
+        }
+        .btn-social-square {
+            display: inline-block;
+            text-decoration: none;
+            width: 50px;
+            margin:2px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 23px;
+            color:white;
+            border-radius: 12px;
+            text-align: center;
+            overflow: hidden;
+            font-weight: bold;
+            transition: .3s;
+        }
+        .btn-social-square i {
+            line-height:50px;
+        }
+        .btn-social-square:hover {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        .btn-social-square--twitter {
+            background: #22b8ff;
+        }
+        .btn-social-square--facebook {
+            background: #6680d8;
+        }
+        .btn-social-square--youtube {
+            background: #db233f;
+        }
+        /******************************/
+    
+        /*チーム紹介ページ用class*/
+    
+        .team {
+            width: 100%;
+            position: relative;
+        }
+        .team_bg {
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .team_bg img {
+            width: 100%;
+        }
+        .team_intro {
+            position: absolute;
+            font-weight: bold;
+            font-size: 30px;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+        }
+        /* 各チーム紹介class */
+        .M_box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            margin: 100px 10px;
+            padding: 0px 0px;
+        }
+        /* 説明文 */
+        .text {
+            text-align: left;
+            text-indent: 1em;
+            font-size: 20px;
+            margin: 0px 60px;
+        }
+        /* 小見出し */
+        .text h3 {
+            text-align: center;
+            color: rgb(218, 218, 112);
+            font-size: 40px;
+            margin: 25px 20px 25px 0px;
+        }
+        /* チーム画像 */
+        .pict {
+            margin: 0px 20px;
+            text-align: center;
+        }
+        .pict img {
+            width: 80%;
+            /* height: 300px; */
+            display: inline-block;
+        }
+    
+        /******************************/
+    
+        /*曲・出演紹介ページ用class*/
+    
+        .music_intro {
+            margin: 70px 0px 0px 0px;
+        }
+        .header03 {
+            margin: 10px 0px 0px 0px;
+            font-size: 30px;
+            color: rgb(224, 181, 90);
+        }
+        .music_all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .music {
+            margin: 10px 40px 30px;
+        }
+        .music_ex {
+            margin: 30px 30px 30px;
+        }
+        .song_name {
+            /* margin: 0px 40px; */
+            color: #FAFFC9;
+            font-size: 30px;
+        }
+        .n_color1 {
+            color: rgb(218, 218, 112);
+            margin: 0px 0px 0px 0px;
+            padding: 0;
+            font-size: 25px;
+        }
+        .song_ex {
+            margin: 20px 0px 30px;
+            padding: 0;
+        }
+        .song_ex p{
+            font-size: 15px;
+        }
+        .movie {
+            width: 360px;
+            height: 195px;
+        }
+        .event_intro {
+            margin: 130px 0px 0px 0px;
+        }
+        .event_cn {
+            font-size: 18px;
+        }
+        .event_all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .event {
+            margin: 10px 40px 30px;
+        }
+        .event_ex {
+            margin: 30px 30px 30px;
+        }
+        .event_name {
+            /* margin: 0px 40px; */
+            color: #FAFFC9;
+            font-size: 22px;
+        }
+        .n_color2 {
+            color: rgb(218, 218, 112);
+            margin: 0px 0px 0px 0px;
+            padding: 0;
+            font-size: 25px;
+        }
+        .event_ex {
+            margin: 20px 0px 30px;
+            padding: 0;
+        }
+        .event_ex p{
+            font-size: 15px;
+        }
+        .picture {
+            width: 360px;
+            height: 195px;
+            object-fit: cover;
+        }
+        .contact {
+            margin: 20px 0px 30px 0px;
+        }
 }
 
 @media screen and (min-width:960px) {
@@ -435,7 +1134,7 @@
             color: rgb(230, 230, 102);
         }
         .footer03 {
-            margin: 40px 301111111111111111111111111111111111111111111111111111111111111111110px 0px;
+            margin: 40px 30px 0px;
             padding: 0px 0px 20px 0px;
             text-align: center;
             font-size: 12px;
@@ -473,6 +1172,7 @@
         }
         .st_c0 {
             font-size: 40px;
+            color: rgb(232, 241, 92);
         }
         .st_c1 {
             color: rgb(251, 118, 77);
@@ -624,7 +1324,9 @@
         }
         .music_all {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
+            align-content: space-around;
         }
         .music {
             margin: 10px 40px 30px;
